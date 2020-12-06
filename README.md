@@ -1,1 +1,1 @@
-[Deployed URL]("https://discordbytanishq.netlify.app/")
+[Deployed URL](https://discordbytanishq.netlify.app/)
