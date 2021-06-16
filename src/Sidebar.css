@@ -4,6 +4,7 @@
     flex: 0.25;
     height: 100vh;
     background-color:  #2f3135;
+    max-width: 342px;
 }
 
 .sidebar__top{

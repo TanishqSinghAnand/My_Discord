@@ -4,6 +4,7 @@
     align-items: center;
     color: gray;
     padding: 10px;
+    max-width: 1024px;
 }
 
 .chatHeader__hash{

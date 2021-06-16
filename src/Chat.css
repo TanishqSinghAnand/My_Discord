@@ -4,6 +4,7 @@
     flex: 0.75;
     background-color: #363a3f;
     height: 100vh;
+    max-width: 1024px;
 }
 
 .chat__messages{

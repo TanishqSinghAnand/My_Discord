@@ -16,3 +16,16 @@
     font-size: 30px;
     padding: 8px ;
 }
+
+.channel__name{
+    overflow: scroll;
+}
+
+.channel__name::-webkit-scrollbar{
+    display: none;
+}
+
+.channel__name{
+    -ms-overflow-style: none;
+    scrollbar-width : none;
+}
