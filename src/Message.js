@@ -13,7 +13,7 @@ function Message({timestamp,user,message}) {
                         {new Date(timestamp?.toDate()).toUTCString()}
                     </span>
                 </h4>
-                <p>
+                <p className='msg'>
                     {message}
                 </p>
             </div>
