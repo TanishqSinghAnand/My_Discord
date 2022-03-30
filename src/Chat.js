@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 import { selectChannelId, selectChannelName } from "./features/appSlice";
 import { selectUser } from "./features/userSlice";
 import db from "./firebase";
-import firebase from 'firebase'
+import firebase from "firebase";
 
 function Chat() {
   const channelId = useSelector(selectChannelId);
@@ -33,13 +33,17 @@ function Chat() {
 
   const sendMessages = (e) => {
     e.preventDefault();
-    db.collection("channels").doc(channelId).collection("messages").add({
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-      message: input,
-      user: user,
-    });
+    if (input.trim().length > 0) {
+      db.collection("channels").doc(channelId).collection("messages").add({
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        message: input,
+        user: user,
+      });
 
-    setInput("");
+      setInput("");
+    } else {
+      alert("Please enter a message");
+    }
   };
 
   return (
